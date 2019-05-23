@@ -1,0 +1,98 @@
+// ----- Variables
+
+$darkblue: #0E1321;
+$oceanblue: #27AFB4;
+$magenta: #CC3366;
+$white: #FBFCFB;
+$gray: #E6E9EB;
+$darkgray: #B3B5B7;
+
+// ----- Mixins
+
+@mixin items ($maxh, $maxw, $margin, $height){
+        max-height: $maxh;
+        max-width: $maxw;
+        margin: $margin;
+        height: $height;
+}
+
+@mixin desc ($maxw, $margin, $float) {
+    max-width: $maxw;
+    margin: $margin;
+    float: $float;
+}
+// ----- SASS
+@font-face{
+    font-family: "Poppins";
+    src: url('https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap') format('opentype'),
+}
+
+html{
+
+    padding: 0px;
+	font-family: "Poppins", Arial, sans-serif;
+    body {
+        margin: 0px;
+        line-height: 1.6;
+        font-size: 14px;
+        color: $darkblue;
+        background: $white;
+    }
+    a{
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+.navigation{
+	font-size: 16px;
+    margin-right: -8vw;
+	float: right;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  transform-origin: top left;
+    div {
+    display: inline-block;
+    margin-left: 17px;
+    margin-right: 8vh;
+    }
+    div:first-child{
+        margin-left: -10vh;
+    }
+}
+
+.header{
+    background-image: url(https://github.com/KRVKN/Portfolio_Website/blob/master/mikael-frivold-1517961-unsplash.jpg?raw=true);
+    background-size: 100%;
+    height: 70vh;
+    color: $white;
+        .miniBio{
+            span{
+                font-size: 24pt;
+                font-weight: 500;
+                line-height: 3em;                
+            }
+            margin: 0vw 15vw;
+            font-size: 16pt;
+            max-width: 28vw;
+        }
+        img{
+            margin: 4vw;
+        }
+}
+
+.section{
+    .item{
+        @include items(85vh, 55vw, 4vw, auto);
+    }
+    .description{
+        @include desc(25vw, 20vh 4vw, right);
+    }
+    .item-right{
+        @include items(85vh, 55vw ,4vw ,auto);
+        float: right;
+    }
+    .description-left{
+        @include desc(25vw, 40vh 4vw, left);
+    }
+}

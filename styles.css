@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap") format("opentype");
+}
+
+html {
+  padding: 0px;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+html body {
+  margin: 0px;
+  line-height: 1.6;
+  font-size: 14px;
+  color: #0E1321;
+  background: #FBFCFB;
+}
+
+html a {
+  text-decoration: none;
+  color: #FBFCFB;
+}
+
+.navigation {
+  font-size: 16px;
+  margin-right: -8vw;
+  float: right;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.navigation div {
+  display: inline-block;
+  margin-left: 17px;
+  margin-right: 8vh;
+}
+
+.navigation div:first-child {
+  margin-left: -10vh;
+}
+
+.header {
+  background-image: url(https://github.com/KRVKN/Portfolio_Website/blob/master/mikael-frivold-1517961-unsplash.jpg?raw=true);
+  background-size: 100%;
+  height: 70vh;
+  color: #FBFCFB;
+}
+
+.header .miniBio {
+  margin: 0vw 15vw;
+  font-size: 16pt;
+  max-width: 28vw;
+}
+
+.header .miniBio span {
+  font-size: 24pt;
+  font-weight: 500;
+  line-height: 3em;
+}
+
+.header img {
+  margin: 4vw;
+}
+
+.section .item {
+  max-height: 85vh;
+  max-width: 55vw;
+  margin: 4vw;
+  height: auto;
+}
+
+.section .description {
+  max-width: 25vw;
+  margin: 20vh 4vw;
+  float: right;
+}
+
+.section .item-right {
+  max-height: 85vh;
+  max-width: 55vw;
+  margin: 4vw;
+  height: auto;
+  float: right;
+}
+
+.section .description-left {
+  max-width: 25vw;
+  margin: 40vh 4vw;
+  float: left;
+}
+/*# sourceMappingURL=styles.css.map */
